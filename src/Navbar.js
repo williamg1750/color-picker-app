@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 //material UI componenets
 //dropdown
 import Select from '@mui/material/Select';
@@ -31,7 +32,7 @@ class Navbar extends Component {
     return (
       <header className='Navbar'>
         <div className='logo'>
-          <a href='#'>ReactColorPicker</a>
+          <Link to='/'>React Color Picker</Link>
         </div>
         <div className='slider-container'>
           <span>Level : {level}</span>
