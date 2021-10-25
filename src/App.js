@@ -12,14 +12,16 @@ class App extends Component {
     });
   }
   render() {
-    console.log(seedColors);
+    //remember to pass in route props if you are going to use history,match or location you will need route props passes in RENDER and also decontruct in the props
     return (
       <div className='App'>
         <Switch>
           <Route
             exact
             path='/'
-            render={() => <Palettelist palettes={seedColors} />}
+            render={(routeProps) => (
+              <Palettelist palettes={seedColors} {...routeProps} />
+            )}
           />
           <Route
             exact
