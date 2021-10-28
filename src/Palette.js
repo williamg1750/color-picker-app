@@ -27,7 +27,7 @@ class Palette extends Component {
         name={currColor.name}
         key={currColor.id}
         moreUrl={`${id}/${currColor.id}`}
-        showLink={true}
+        showingFullPalette={true}
       />
     ));
 

@@ -36,7 +36,7 @@ class SingleColorPalette extends Component {
         key={curColor.name}
         name={curColor.name}
         background={curColor[format]}
-        showLink={false}
+        showingFullPalette={false}
       />
     ));
     return (
